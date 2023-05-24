@@ -1,7 +1,46 @@
+@charset "UTF-8";
 /*! SASS #style */
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   background-color: rgb(245, 245, 245);
+  font-family: "League Spartan", sans-serif;
+  margin: 1vh 11vw;
+}
+
+h1 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  white-space: pre-line;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.names {
+  font-size: 2rem;
+  font-weight: 300;
+  white-space: pre-line;
+  margin-top: -0.7rem;
+  margin-left: 1rem;
+  line-height: 2rem;
+}
+
+.localisation {
+  color: rgb(158, 158, 158);
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-left: 1rem;
+  margin-top: -1rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+}
+
+p {
+  font-size: 1.7rem;
 }
 
 header {
@@ -40,11 +79,10 @@ nav ul li a {
   }
   nav {
     color: black;
-    margin: 0rem;
   }
   nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: à;
     padding: 0;
   }
   nav ul li {
@@ -52,35 +90,48 @@ nav ul li a {
   }
   nav ul li a {
     font-family: sans-serif;
-    display: block;
     color: black;
     text-decoration: none;
-    padding: 10px 5rem;
+    padding: 10px 10rem;
+    margin: 0.1rem;
   }
   nav li {
     background-color: rgb(129, 95, 183);
-    border: 2rem;
   }
 }
-body {
-  font-family: "League Spartan", sans-serif;
-  margin: 1vh 10vw;
-}
-
 .bannerbox {
   width: 100%;
-  height: 13rem;
-  margin-top: 2rem;
+  height: 15rem;
+  margin-top: -1rem;
   margin-left: auto;
   background-color: rgb(111, 63, 255);
   color: white;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .bannerbox img {
-  margin-top: -4.6rem;
+  margin-top: -5.6rem;
   margin-left: 4rem;
+  padding-right: 5rem;
+  max-width: 21rem;
+}
+
+#stripeleft {
+  max-width: 10rem;
+}
+
+#striperight {
+  max-width: 20rem;
+}
+
+.stripes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4rem;
 }
 
 .speakers {
@@ -92,28 +143,6 @@ body {
 .solospeaker {
   margin: 1rem;
   line-height: 1.5rem;
-}
-
-.solospeaker h2 {
-  margin-top: -0.9rem;
-}
-
-.speakers h2 {
-  padding-left: 1rem;
-  white-space: pre-line;
-}
-
-.solospeaker p {
-  margin-top: -1rem;
-  color: rgb(158, 158, 158);
-}
-
-h2, p {
-  white-space: pre-line;
-}
-
-.speakers p {
-  padding-left: 1rem;
 }
 
 .grid {
