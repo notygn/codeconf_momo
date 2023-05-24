@@ -1,0 +1,377 @@
+@charset "UTF-8";
+/*! SASS #style */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  background-color: rgb(245, 245, 245);
+  font-family: "League Spartan", sans-serif;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 6.7rem;
+  font-weight: 500;
+  white-space: pre-line;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 3.5rem;
+}
+
+.names {
+  font-size: 2rem;
+  font-weight: 300;
+  white-space: pre-line;
+  margin-top: -0.7rem;
+  margin-left: 1rem;
+  line-height: 2rem;
+}
+
+.localisation {
+  color: rgb(158, 158, 158);
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-left: 1rem;
+  margin-top: -1rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 25rem;
+}
+
+nav {
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-family: sans-serif;
+  font-size: 1.7rem;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    color: black;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: à;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    font-family: sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10rem;
+    margin: 0.1rem;
+  }
+  nav li {
+    background-color: rgb(129, 95, 183);
+  }
+}
+.bannerbox {
+  height: 20rem;
+  margin: 6rem 15rem;
+  background: linear-gradient(0deg, rgb(109, 38, 251) 0%, rgb(130, 72, 247) 45%, rgb(130, 72, 247) 55%, rgb(109, 38, 251) 100%);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerbox h2 {
+  margin-top: -3.5rem;
+  white-space: pre-line;
+}
+
+.speakers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  max-width: 87vw;
+  margin: 0 auto;
+}
+
+.becomespeaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5rem;
+  margin: 5rem 0rem;
+}
+
+.becomespeaker h2 {
+  color: rgb(111, 63, 255);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0 auto;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
+  }
+  .bannerbox {
+    width: 100%;
+    height: 9rem;
+    margin-top: 0;
+    margin-left: auto;
+    background-color: rgb(111, 63, 255);
+    color: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .bannerbox img {
+    margin-top: -1rem;
+    margin-left: 2rem;
+    width: 10rem;
+    height: 10rem;
+  }
+}
+footer {
+  background-color: rgb(55, 51, 61);
+  padding: 2rem 15rem;
+  color: white;
+  height: 30rem;
+}
+
+footer img {
+  max-width: 30vw;
+}
+
+.brands {
+  filter: brightness(0) invert(1);
+}
+
+.convention {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.brands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.orangebtn {
+  display: flex;
+  justify-content: center;
+  margin-top: -4.2rem;
+}
+
+.btn {
+  padding: 20px 110px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 2rem solid rgba(255, 89, 0, 0.5);
+  border-radius: 5rem;
+  background-color: #ff5112;
+  color: #000;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+  opacity: 0.2;
+  box-shadow: 0 0 3rem rgb(255, 70, 37);
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.btn2 {
+  margin-top: 1rem;
+  padding: 20px 50px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1rem;
+  border-radius: 5rem;
+  background-color: #ff2a00;
+  color: #000;
+  cursor: pointer;
+  z-index: 3;
+  position: absolute;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.btn3 {
+  margin-top: 5.35rem;
+  padding: 0.4rem 1.5rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0rem 0rem 1rem 1rem;
+  background-color: #2b2b2b;
+  color: #000;
+  cursor: pointer;
+  z-index: 3;
+  position: absolute;
+  color: white;
+}
+
+.btn2 img {
+  max-width: 1.5rem;
+  margin-left: 0.7rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.topform {
+  display: flex;
+}
+
+.downform {
+  display: flex;
+}
+
+.form-group {
+  margin: 1rem;
+}
+
+.bannerbox img {
+  margin-top: -7.1rem;
+  padding-right: 5rem;
+  max-width: 30rem;
+}
+
+.stripes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0rem 15rem;
+  margin-bottom: -8rem;
+}
+
+#stripeleft {
+  max-width: 20rem;
+}
+
+#striperight {
+  max-width: 40rem;
+}
+
+.grid img {
+  max-width: 40rem;
+}
+
+.img-gradient {
+  position: relative;
+}
+
+.img-gradient::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40rem;
+  height: 40rem;
+  background: linear-gradient(138deg, rgba(105, 29, 255, 0.5) 0%, rgba(156, 156, 156, 0.5) 50%, rgba(4, 255, 210, 0.7) 100%);
+}
+
+.stripe-speaker {
+  width: 50%;
+  margin-left: 50%;
+  margin-top: -40rem;
+  z-index: 2;
+  position: relative;
+}
+
+header img {
+  width: 15rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .bannerbox img {
+    margin-top: -1rem;
+    padding-right: 5rem;
+    max-width: 18rem;
+  }
+  .stripes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0rem 10rem;
+    margin-bottom: -3rem;
+  }
+  #stripeleft {
+    max-width: 5rem;
+  }
+  #striperight {
+    max-width: 10rem;
+  }
+  .grid img {
+    max-width: 20rem;
+  }
+  .img-gradient {
+    position: relative;
+  }
+  .img-gradient::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20rem;
+    height: 20rem;
+    background: linear-gradient(138deg, rgba(105, 29, 255, 0.5) 0%, rgba(156, 156, 156, 0.5) 50%, rgba(4, 255, 210, 0.7) 100%);
+  }
+  .stripe-speaker {
+    width: 30%;
+    margin-left: 11rem;
+    z-index: 2;
+    position: relative;
+  }
+}/*# sourceMappingURL=style.css.map */
