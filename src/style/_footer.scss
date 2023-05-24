@@ -1,8 +1,8 @@
 footer{
-  background-color: rgb(46, 41, 53);
-  margin: -1rem -5rem;
+  background-color: rgb(55, 51, 61);
   padding: 2rem 15rem;
   color: $font-color2;
+  height: 30rem;
 }
 
 footer img{
@@ -24,3 +24,65 @@ footer img{
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+.orangebtn{
+  display: flex;
+  justify-content: center;
+  margin-top: -4.2rem;
+}
+
+.btn {
+  padding: 20px 110px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 2rem solid rgba(255, 89, 0, 0.5);
+  border-radius: 5rem;
+  background-color: #ff5112;
+  color: #000;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+  opacity: .2;
+  box-shadow: 0 0 3rem rgb(255, 70, 37);
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.btn2 {
+  margin-top: 1rem;
+  padding: 20px 50px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1rem;
+  border-radius: 5rem;
+  background-color: #ff2a00;
+  color: #000;
+  cursor: pointer;
+  z-index: 3;
+  position: absolute;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.btn3 {
+  margin-top: 5.35rem;
+  padding: .4rem 1.5rem;
+  font-size: .9rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0rem 0rem 1rem 1rem;
+  background-color: #2b2b2b;
+  color: #000;
+  cursor: pointer;
+  z-index: 3;
+  position: absolute;
+  color: white;
+}
+
+.btn2 img{
+  max-width: 1.5rem;
+  margin-left: .7rem;
+}
+
+
