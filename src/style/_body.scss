@@ -9,10 +9,6 @@
   align-items: center;
   justify-content: center;
 }
-.bannerbox h2{
-  margin-top: -3.5rem;
-  white-space: pre-line;
-}
 
 .speakers{
   display: flex;
@@ -22,6 +18,7 @@
 
 .grid {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 2rem;
