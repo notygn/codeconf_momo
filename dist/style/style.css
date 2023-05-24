@@ -1,6 +1,7 @@
 /*! SASS #style */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(245, 245, 245);
 }
 
 header {
@@ -31,14 +32,46 @@ nav ul li a {
   padding: 10px 20px;
 }
 
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    color: black;
+    margin: 0rem;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    font-family: sans-serif;
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 5rem;
+  }
+  nav li {
+    background-color: rgb(129, 95, 183);
+    border: 2rem;
+  }
+}
 body {
-  font-family: sans-serif;
-  margin: 1rem 5rem;
+  font-family: "League Spartan", sans-serif;
+  margin: 1vh 10vw;
 }
 
 .bannerbox {
   width: 100%;
-  height: 10vh;
+  height: 13rem;
+  margin-top: 2rem;
+  margin-left: auto;
   background-color: rgb(111, 63, 255);
   color: white;
   display: flex;
@@ -47,6 +80,7 @@ body {
 
 .bannerbox img {
   margin-top: -4.6rem;
+  margin-left: 4rem;
 }
 
 .speakers {
@@ -57,11 +91,25 @@ body {
 
 .solospeaker {
   margin: 1rem;
+  line-height: 1.5rem;
+}
+
+.solospeaker h2 {
+  margin-top: -0.9rem;
 }
 
 .speakers h2 {
-  max-width: 3em;
   padding-left: 1rem;
+  white-space: pre-line;
+}
+
+.solospeaker p {
+  margin-top: -1rem;
+  color: rgb(158, 158, 158);
+}
+
+h2, p {
+  white-space: pre-line;
 }
 
 .speakers p {
@@ -72,8 +120,8 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 10px;
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
 }
 
 .grid img {
@@ -101,12 +149,64 @@ body {
   margin-top: -5rem;
 }
 
+.becomespeaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5rem;
+  margin: 5rem 0rem;
+}
+
+.becomespeaker h2 {
+  color: rgb(111, 63, 255);
+}
+
+.section2 {
+  margin: -1rem -5rem;
+  background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0 auto;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
+  }
+  .bannerbox {
+    width: 100%;
+    height: 9rem;
+    margin-top: 0;
+    margin-left: auto;
+    background-color: rgb(111, 63, 255);
+    color: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .bannerbox img {
+    margin-top: -1rem;
+    margin-left: 2rem;
+    width: 10rem;
+    height: 10rem;
+  }
+}
 footer {
-  background-color: rgb(163, 163, 163);
+  background-color: rgb(46, 41, 53);
+  margin: -1rem -5rem;
+  padding: 2rem 15rem;
+  color: white;
 }
 
 footer img {
   max-width: 30vw;
+}
+
+.brands {
+  filter: brightness(0) invert(1);
 }
 
 .convention {
