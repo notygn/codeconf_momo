@@ -4,6 +4,8 @@ body{
   background-color: $bg-color;
   font-family: 'League Spartan', sans-serif;
   width: 100vw;
+  overflow-x: hidden;
+  margin: 0; 
 }
 
 h1{
