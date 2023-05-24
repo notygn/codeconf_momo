@@ -41,17 +41,13 @@
   justify-content: center;
 }
 
-.solospeaker{
-  margin: 1rem;
-  line-height: 1.5rem;
-}
 
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0rem;
-  grid-row-gap: 0rem;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
   }
 
   .grid img{
@@ -74,7 +70,9 @@
   .stripes-right{
     width: 50%;
     margin-left: 50%;
-    margin-top: -5rem;
+    margin-top: -40rem;
+    z-index: 2;
+    position: relative;
   }
 
   .becomespeaker{
