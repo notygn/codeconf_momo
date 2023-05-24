@@ -2,7 +2,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2rem 15rem;
+  margin: 2rem 25rem;
 }
 
 nav {
@@ -21,6 +21,9 @@ nav ul li {
 
 nav ul li a {
   font-family: sans-serif;
+  font-size: 1.7rem;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 500;
   display: block;
   color: $font-color;
   text-decoration: none;

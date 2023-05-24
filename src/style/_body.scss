@@ -1,9 +1,8 @@
 
 .bannerbox{
-  height: 13rem;
-  margin-top: -1rem;
-  margin: 2rem 10rem;
-  background-color: $purple;
+  height: 20rem;
+  margin: 6rem 15rem;
+  background: linear-gradient(0deg, rgba(109,38,251,1) 0%, rgba(130,72,247,1) 45%, rgba(130,72,247,1) 55%, rgba(109,38,251,1) 100%);
   color: $font-color2;
   display: flex;
   flex-direction: row;
@@ -11,6 +10,7 @@
   justify-content: center;
 }
 .bannerbox h2{
+  margin-top: -3.5rem;
   white-space: pre-line;
 }
 
@@ -20,13 +20,14 @@
   justify-content: center;
 }
 
-
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
+  max-width: 87vw;
+  margin: 0 auto;
   }
 
   .becomespeaker{
