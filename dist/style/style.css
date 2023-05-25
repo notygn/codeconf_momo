@@ -250,8 +250,8 @@ footer img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0rem 15rem;
-  margin-bottom: -8rem;
+  margin: 0 auto;
+  max-width: 80rem;
 }
 
 #stripeleft {
