@@ -118,15 +118,6 @@ nav a {
   text-decoration: none;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
-  justify-content: center;
-}
-
 .becomespeaker {
   display: flex;
   flex-direction: column;
@@ -143,7 +134,7 @@ footer {
   background-color: rgb(55, 51, 61);
   color: white;
   height: 30rem;
-  margin: 0;
+  margin-top: 10rem;
 }
 
 footer img {
@@ -244,7 +235,7 @@ footer img {
   margin: 1rem;
 }
 
-.solospeaker img {
+.gridspeaker img {
   width: 20rem;
 }
 
@@ -283,4 +274,20 @@ footer img {
   margin-top: -40rem;
   z-index: 2;
   position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  justify-content: center;
+}
+
+.gridspeaker:hover {
+  background-color: rgb(255, 220, 192);
+}
+.gridspeaker:hover img {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
