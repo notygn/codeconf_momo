@@ -1,20 +1,27 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    justify-content: center;
-    //margin-left: 7vw;
-  
-    }
-  
-    .gridspeaker:hover{
-  
-      background-color: rgb(255, 220, 192);
-    
-      img{
-        display:none;
-      }
-    
-    }
+  display: grid;
+  grid-template-columns: repeat(4, minmax(6rem,18rem));
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0rem;
+  grid-row-gap: 3rem;
+  justify-content: center;
+  //margin-left: 7vw;
+  &speaker {
+    width: 20rem;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+
+.gridspeaker:hover {
+  background-color: rgb(255, 220, 192);
+
+  img {
+    display: none;
+  }
+}
+
