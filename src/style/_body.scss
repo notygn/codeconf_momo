@@ -2,9 +2,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 2rem;
+  grid-column-gap: 0rem;
   grid-row-gap: 1rem;
   justify-content: center;
+  //margin-left: 7vw;
   }
 
   .becomespeaker{
