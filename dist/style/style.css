@@ -10,7 +10,7 @@ body {
   font-family: "League Spartan", sans-serif;
   width: 100vw;
   overflow-x: hidden;
-  margin: 0;
+  margin: 0 auto;
 }
 
 h1 {
@@ -32,7 +32,6 @@ h2 {
   white-space: pre-line;
   margin-top: -0.7rem;
   margin-left: 1rem;
-  line-height: 2rem;
 }
 
 .localisation {
@@ -117,19 +116,13 @@ nav a {
   text-decoration: none;
 }
 
-.speakers {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .grid {
   display: grid;
-  align-items: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
+  justify-content: center;
 }
 
 .becomespeaker {
@@ -253,12 +246,6 @@ footer img {
   width: 20rem;
 }
 
-.bannerbox img {
-  margin-top: -7.1rem;
-  padding-right: 5rem;
-  max-width: 30rem;
-}
-
 .stripes {
   display: flex;
   flex-direction: row;
@@ -294,8 +281,4 @@ footer img {
   margin-top: -40rem;
   z-index: 2;
   position: relative;
-}
-
-header img {
-  width: 15rem;
 }/*# sourceMappingURL=style.css.map */
