@@ -31,17 +31,23 @@ nav {
     pointer-events: none;
     align-self: end;
   }
+  
+  h1{
+    font-size: 3.2rem;
+    font-weight: 500;
+    align-self: end;
+    color: white;
+    }
+  
   h1, p {
     grid-column: 6/11;
   }
-  h1 {
-    align-self: end;
-    color: white;
-    font-size: 5rem;
-  }
+
   p {
     align-self: start;
     color: white;
+    line-height: 2rem;
+    margin-top: 0;
   }
 }
 

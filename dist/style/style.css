@@ -15,9 +15,8 @@ body {
 
 h1 {
   font-family: museo;
-  font-size: 6.7rem;
+  font-size: 4rem;
   font-weight: 500;
-  white-space: pre-line;
 }
 
 h2 {
@@ -86,17 +85,20 @@ nav {
   pointer-events: none;
   align-self: end;
 }
-.hero h1, .hero p {
-  grid-column: 6/11;
-}
 .hero h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
   align-self: end;
   color: white;
-  font-size: 5rem;
+}
+.hero h1, .hero p {
+  grid-column: 6/11;
 }
 .hero p {
   align-self: start;
   color: white;
+  line-height: 2rem;
+  margin-top: 0;
 }
 
 nav {
