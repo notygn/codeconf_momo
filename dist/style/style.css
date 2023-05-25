@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /*! SASS #style */
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: museo;
+  src: url(/src/style/museo300.woff) format("woff");
+  font-weight: normal;
+}
 body {
   background-color: rgb(245, 245, 245);
   font-family: "League Spartan", sans-serif;
@@ -10,6 +15,7 @@ body {
 }
 
 h1 {
+  font-family: museo;
   font-size: 6.7rem;
   font-weight: 500;
   white-space: pre-line;
