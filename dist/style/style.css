@@ -251,6 +251,7 @@ footer img {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: -3rem;
   max-width: 80rem;
 }
 
