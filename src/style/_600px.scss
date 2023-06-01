@@ -1,0 +1,92 @@
+@media only screen and (max-width: 600px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(10rem,35rem));
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: .5rem;
+        grid-row-gap: 1rem;
+        justify-content: center;
+        margin: 1rem;
+      
+        &speaker {
+          width: 12rem;
+        }
+    
+    }
+      
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .logo {
+        margin: 0 auto;
+        gap: 1rem;
+      }
+      
+      .hero {
+        display: grid;
+        border: 1px solid #888;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        background: linear-gradient(0deg, rgba(109,38,251,1) 0%, rgba(130,72,247,1) 45%, rgba(130,72,247,1) 55%, rgba(109,38,251,1) 100%);
+        * {
+          border: 0;
+        }
+        
+        img {
+          position: relative;
+          z-index: 2;
+          margin-block-start: -3rem;
+          width: 100%;
+          grid-column: 3/6;
+          grid-row: span 2;
+          pointer-events: none;
+          align-self: end;
+        }
+        
+        h1{
+          font-size: 2rem;
+          font-weight: 500;
+          align-self: end;
+          color: white;
+          }
+        
+        h1, p {
+          grid-column: 6/11;
+        }
+      
+        p {
+          font-size: 1rem;
+          align-self: start;
+          color: white;
+          line-height: 1rem;
+          padding: 0rem 1rem 0rem 1rem;
+        }
+      
+      }
+      
+      nav {
+        background: white;
+        z-index: 1;
+        position: relative;
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+      
+      nav a {
+        font-family: 'League Spartan', sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        display: block;
+        text-decoration: none;
+      }
+
+      .stripes{
+        display: none;
+      }
+}

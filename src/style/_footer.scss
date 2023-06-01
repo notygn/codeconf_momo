@@ -1,35 +1,43 @@
 footer{
   background-color: rgb(55, 51, 61);
   color: $font-color2;
-  height: 40rem;
+  height: 50rem;
   margin-top: 10rem;
   padding: 0rem 7rem 0rem 7rem;
-}
 
-footer img{
-  max-width: 30vw;
-}
+  img{
+    max-width: 30vw;
+  }
 
-.brands{
-  filter: brightness(0) invert(1);
+  h3{
+    color: $purple;
+  }
+
 }
 
 .convention{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+
+  p{
+    max-width: 50rem;
+  }
 }
 
 .brands{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin: 4rem 0rem 4rem 0rem;
+  filter: brightness(0) invert(1);
 }
 
 .orangebtn{
   display: flex;
   justify-content: center;
-  margin-top: -4.2rem;
+  margin-top: -7.2rem;
 }
 
 .btn {
@@ -93,3 +101,13 @@ footer img{
   grid-column-gap: 20px;
   grid-row-gap: 0px;
   }
+
+.followus{
+  padding: 1rem 3rem 1rem 3rem;
+  border: .1rem solid white;
+}
+
+.codeconf{
+  display: flex;
+  justify-content: space-around;
+}

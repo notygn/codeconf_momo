@@ -136,35 +136,39 @@ nav a {
 footer {
   background-color: rgb(55, 51, 61);
   color: white;
-  height: 40rem;
+  height: 50rem;
   margin-top: 10rem;
   padding: 0rem 7rem 0rem 7rem;
 }
-
 footer img {
   max-width: 30vw;
 }
-
-.brands {
-  filter: brightness(0) invert(1);
+footer h3 {
+  color: rgb(111, 63, 255);
 }
 
 .convention {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+}
+.convention p {
+  max-width: 50rem;
 }
 
 .brands {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin: 4rem 0rem 4rem 0rem;
+  filter: brightness(0) invert(1);
 }
 
 .orangebtn {
   display: flex;
   justify-content: center;
-  margin-top: -4.2rem;
+  margin-top: -7.2rem;
 }
 
 .btn {
@@ -229,9 +233,21 @@ footer img {
   grid-row-gap: 0px;
 }
 
+.followus {
+  padding: 1rem 3rem 1rem 3rem;
+  border: 0.1rem solid white;
+}
+
+.codeconf {
+  display: flex;
+  justify-content: space-around;
+}
+
 .form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100vw;
 }
 
@@ -292,4 +308,84 @@ footer img {
 }
 .gridspeaker:hover img {
   display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10rem, 35rem));
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 1rem;
+    justify-content: center;
+    margin: 1rem;
+  }
+  .gridspeaker {
+    width: 12rem;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .logo {
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  .hero {
+    display: grid;
+    border: 1px solid #888;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(0deg, rgb(109, 38, 251) 0%, rgb(130, 72, 247) 45%, rgb(130, 72, 247) 55%, rgb(109, 38, 251) 100%);
+  }
+  .hero * {
+    border: 0;
+  }
+  .hero img {
+    position: relative;
+    z-index: 2;
+    -webkit-margin-before: -3rem;
+            margin-block-start: -3rem;
+    width: 100%;
+    grid-column: 3/6;
+    grid-row: span 2;
+    pointer-events: none;
+    align-self: end;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    align-self: end;
+    color: white;
+  }
+  .hero h1, .hero p {
+    grid-column: 6/11;
+  }
+  .hero p {
+    font-size: 1rem;
+    align-self: start;
+    color: white;
+    line-height: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  nav {
+    background: white;
+    z-index: 1;
+    position: relative;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  nav a {
+    font-family: "League Spartan", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+  }
+  .stripes {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
