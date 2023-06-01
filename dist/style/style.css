@@ -310,6 +310,10 @@ footer h3 {
   display: none;
 }
 
+.flip {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .grid {
     display: grid;
@@ -387,5 +391,27 @@ footer h3 {
   }
   .stripes {
     display: none;
+  }
+  .gridspeaker:hover {
+    background-color: rgb(255, 220, 192);
+  }
+  .gridspeaker:hover img {
+    display: none;
+  }
+  .gridspeaker:hover .flip {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .gridspeaker:hover h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 2rem;
+  }
+  .gridspeaker:hover h3 {
+    font-size: 1.3rem;
+  }
+  .gridspeaker:hover p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */

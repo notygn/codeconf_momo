@@ -89,4 +89,34 @@
       .stripes{
         display: none;
       }
+
+
+      .gridspeaker:hover {
+        background-color: rgb(255, 220, 192);
+      
+        img {
+          display: none;
+        }
+
+        .flip{
+            display: inline-block;
+            padding: 1rem;
+          }
+
+          h2{
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding-top: 2rem;
+          }
+
+          h3{
+            font-size: 1.3rem;
+          }
+
+          p{
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+          }
+      }
+
 }
