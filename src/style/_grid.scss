@@ -5,15 +5,28 @@
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
   justify-content: center;
+
   &speaker {
     width: 17rem;
   }
 
+  &stripe {
+    width: 25%;
+    margin-top: -40rem;
+    z-index: 2;
+    position: relative;
+  }
+  
   img {
     width: 100%;
     object-fit: cover;
   }
 
+}
+
+.grid:first-child {
+  background-color: yellow;
+  
 }
 
 .gridspeaker:hover {

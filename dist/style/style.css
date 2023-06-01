@@ -263,13 +263,6 @@ footer img {
   max-width: 20rem;
 }
 
-.stripe-speaker {
-  width: 50%;
-  margin-top: -40rem;
-  z-index: 2;
-  position: relative;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(6rem, 18rem));
@@ -281,10 +274,20 @@ footer img {
 .gridspeaker {
   width: 17rem;
 }
+.gridstripe {
+  width: 25%;
+  margin-top: -40rem;
+  z-index: 2;
+  position: relative;
+}
 .grid img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.grid:first-child {
+  background-color: yellow;
 }
 
 .gridspeaker:hover {
