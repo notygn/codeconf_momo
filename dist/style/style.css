@@ -302,31 +302,63 @@ footer h3 {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.gridspeaker:hover {
-  background-color: rgb(255, 220, 192);
-}
-.gridspeaker:hover img {
-  display: none;
+.grid h2 {
+  font-weight: 500;
+  line-height: 2rem;
+  margin-top: 1rem;
 }
 
 .flip {
   display: none;
 }
 
+.gridspeaker:hover {
+  background-color: rgb(255, 220, 192);
+  border-radius: 0.5rem;
+}
+.gridspeaker:hover img {
+  display: none;
+}
+.gridspeaker:hover .localisation {
+  display: none;
+}
+.gridspeaker:hover .flip {
+  display: inline-block;
+  padding: 0rem 1rem;
+}
+.gridspeaker:hover .flip h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.gridspeaker:hover .flip h3 {
+  font-size: 1.5rem;
+  margin-bottom: -0.5rem;
+}
+.gridspeaker:hover .flip p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.gridspeaker:hover .flip2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.gridspeaker:hover .flip2 .button {
+  background-color: #ffd5cb;
+  border: 0.1rem solid red;
+  border-radius: 10rem;
+  color: rgb(255, 47, 47);
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 0rem 1rem;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(10rem, 35rem));
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 1rem;
-    justify-content: center;
-    margin: 1rem;
-  }
-  .gridspeaker {
-    width: 12rem;
-  }
   nav {
     display: flex;
     flex-direction: column;
@@ -394,6 +426,7 @@ footer h3 {
   }
   .gridspeaker:hover {
     background-color: rgb(255, 220, 192);
+    border-radius: 0.5rem;
   }
   .gridspeaker:hover img {
     display: none;
@@ -413,5 +446,71 @@ footer h3 {
   .gridspeaker:hover p {
     font-size: 0.9rem;
     line-height: 1.2rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(6rem, 18rem));
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    justify-content: center;
+  }
+  .gridspeaker {
+    width: 13rem;
+  }
+  .grid img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .grid h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-top: 0.1rem;
+  }
+  .flip {
+    display: none;
+  }
+  .gridspeaker:hover {
+    background-color: rgb(255, 220, 192);
+    border-radius: 0.5rem;
+  }
+  .gridspeaker:hover img {
+    display: none;
+  }
+  .gridspeaker:hover .localisation {
+    display: none;
+  }
+  .gridspeaker:hover .flip {
+    display: inline-block;
+    padding: 0rem 1rem;
+  }
+  .gridspeaker:hover .flip h2 {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+  .gridspeaker:hover .flip p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .gridspeaker:hover .flip2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .gridspeaker:hover .flip2 .button {
+    background-color: #ffd5cb;
+    border: 0.1rem solid red;
+    border-radius: 10rem;
+    color: rgb(255, 47, 47);
+    padding: 0.5rem 0.1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.6rem;
+    margin: 0rem 2rem;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=style.css.map */
