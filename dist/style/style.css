@@ -253,7 +253,15 @@ footer img {
   max-width: 30vw;
 }
 footer h3 {
-  color: rgb(111, 63, 255);
+  color: rgb(39, 226, 255);
+}
+footer i {
+  margin-left: 0.5rem;
+}
+footer p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .convention {
@@ -263,7 +271,8 @@ footer h3 {
   justify-content: space-around;
 }
 .convention p {
-  max-width: 50rem;
+  padding-right: 5rem;
+  max-width: 30vw;
 }
 
 .brands {
@@ -298,7 +307,7 @@ footer h3 {
 
 .btn2 {
   margin-top: 1rem;
-  padding: 20px 50px;
+  padding: 20px 40px;
   font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
@@ -338,63 +347,66 @@ footer h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 0px;
+  grid-column-gap: 7rem;
+  grid-row-gap: 1rem;
 }
 
 .followus {
-  padding: 1rem 3rem 1rem 3rem;
-  border: 0.1rem solid white;
+  width: 30vw;
+  height: 7vh;
+  padding: 0rem 1rem 0rem 1rem;
+  border: 0.1rem solid rgb(147, 147, 147);
 }
-
-.codeconf {
+.followus .codeconf {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.followus h3, .followus p {
+  margin-bottom: 0rem;
+  margin-top: 1.1rem;
 }
 
-.becomespeaker {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 80vw;
-}
-.becomespeaker h3 {
-  color: rgb(111, 63, 255);
-  font-size: 3rem;
-  font-weight: 400;
-  margin-bottom: 0;
-}
-.becomespeaker h4 {
-  font-weight: 400;
-  font-size: 2rem;
-  margin-bottom: 0;
-}
-.becomespeaker p {
-  font-size: 1.5rem;
-  font-weight: 300;
-  max-width: 60vw;
-}
-
-.form {
+form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100vw;
 }
-
-.topform {
+form #form {
   display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
 }
-
-.downform {
-  display: flex;
+form #name, form #subject {
+  width: 19rem;
+  margin-right: 1rem;
 }
-
-.form-group {
-  margin: 1rem;
+form #email, form #keywords {
+  width: 19rem;
+  margin-left: 1rem;
+}
+form #message {
+  width: 40rem;
+  height: 9rem;
+}
+form h3 {
+  color: rgb(111, 63, 255);
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: -1rem;
+}
+form h4 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: -1rem;
+}
+form p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2rem;
+  max-width: 43vw;
+  text-align: center;
 }
 
 .stripes {

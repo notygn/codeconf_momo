@@ -1,52 +1,49 @@
-.becomespeaker{
+form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 80vw;
- 
+  width: 100vw;
+
+  #form{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+  }
+  
+  #name, #subject{
+    width: 19rem;
+    margin-right: 1rem;
+  }
+  
+  #email, #keywords{
+    width: 19rem;
+    margin-left: 1rem;
+  }
+  
+  #message{
+    width: 40rem;
+    height: 9rem;
+  }
 
   h3{
     color: $purple;
     font-size: 3rem;
-    font-weight: 400;
-    margin-bottom: 0;
+    font-weight: 600;
+    margin-bottom: -1rem;
   }
 
   h4{
     font-weight: 400;
     font-size: 2rem;
-    margin-bottom: 0;
+    margin-bottom: -1rem;
   }
 
   p{
     font-size: 1.5rem;
-    font-weight: 300;
-    max-width: 60vw;
+    font-weight: 200;
+    line-height: 2rem;
+    max-width: 43vw;
+    text-align: center;
   }
 
-}
-
-
-
-
-.form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
-
-.topform{
-  display: flex;
-}
-
-.downform{
-  display: flex;
-}
-
-.form-group{
-  margin: 1rem;
 }

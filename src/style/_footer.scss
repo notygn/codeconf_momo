@@ -10,9 +10,18 @@ footer{
   }
 
   h3{
-    color: $purple;
+    color: $turquoise;
   }
 
+  i{
+    margin-left: .5rem;
+  }
+
+  p{
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .convention{
@@ -22,7 +31,8 @@ footer{
   justify-content: space-around;
 
   p{
-    max-width: 50rem;
+    padding-right: 5rem;
+    max-width: 30vw;
   }
 }
 
@@ -58,7 +68,7 @@ footer{
 
 .btn2 {
   margin-top: 1rem;
-  padding: 20px 50px;
+  padding: 20px 40px;
   font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
@@ -98,16 +108,27 @@ footer{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 0px;
+  grid-column-gap: 7rem;
+  grid-row-gap: 1rem;
   }
 
 .followus{
-  padding: 1rem 3rem 1rem 3rem;
-  border: .1rem solid white;
+  width: 30vw;
+  height: 7vh;
+  padding: 0rem 1rem 0rem 1rem;
+  border: .1rem solid rgb(147, 147, 147);
+
+  .codeconf{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+
+  h3, p{
+    margin-bottom: 0rem;
+    margin-top: 1.1rem;
+  }
+
+
 }
 
-.codeconf{
-  display: flex;
-  justify-content: space-around;
-}
