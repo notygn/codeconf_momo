@@ -69,3 +69,14 @@ nav a {
   display: block;
   text-decoration: none;
 }
+
+
+@media only screen and (max-width: 480px){
+  #hamburger-menu {
+    display:inline-block;
+  }
+
+  nav{
+    display: none;
+  }
+}

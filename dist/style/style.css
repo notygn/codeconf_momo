@@ -243,6 +243,14 @@ nav a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 480px) {
+  #hamburger-menu {
+    display: inline-block;
+  }
+  nav {
+    display: none;
+  }
+}
 .orangebtn {
   display: flex;
   justify-content: center;
@@ -326,7 +334,7 @@ footer p {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   padding-top: 5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .testconv {
@@ -382,6 +390,49 @@ footer p {
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 480px) {
+  footer {
+    background-color: rgb(55, 51, 61);
+    color: white;
+    margin: 0 auto;
+    margin-top: 10rem;
+  }
+  footer h3 {
+    color: rgb(39, 226, 255);
+  }
+  footer i {
+    margin-left: 0.5rem;
+  }
+  footer p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .test {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 3em;
+  }
+  .testconv {
+    grid-area: 1/1/1/4;
+    order: 1;
+  }
+  .testimg {
+    display: none;
+  }
+  .testhelpdesk {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .follow {
+    grid-column: 1/4;
+  }
+}
 form {
   display: flex;
   flex-direction: column;
@@ -519,12 +570,6 @@ form p {
 }
 
 @media only screen and (max-width: 600px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
   .logo {
     margin: 0 auto;
     gap: 1rem;
@@ -548,12 +593,12 @@ form p {
     align-self: end;
   }
   .hero h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     color: white;
     position: absolute;
     z-index: 2;
-    max-width: 25rem;
+    max-width: 20rem;
     margin-left: 2rem;
     margin-bottom: 0;
   }
@@ -562,14 +607,6 @@ form p {
   }
   .hero p {
     display: none;
-  }
-  nav {
-    background: white;
-    z-index: 1;
-    position: relative;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 1rem;
   }
   nav a {
     font-family: "League Spartan", sans-serif;
@@ -589,7 +626,8 @@ form p {
   }
   .gridspeaker:hover {
     background-color: rgb(255, 220, 192);
-    width: 100vw;
+    width: 100%;
+    height: 20rem;
     margin-left: 0;
     display: flex;
     flex-direction: column;
@@ -686,68 +724,5 @@ form p {
     font-size: 0.6rem;
     margin: 0rem 2rem;
     cursor: pointer;
-  }
-  footer {
-    background-color: rgb(55, 51, 61);
-    color: white;
-    margin: 0 auto;
-    margin-top: 10rem;
-  }
-  footer h3 {
-    color: rgb(39, 226, 255);
-  }
-  footer i {
-    margin-left: 0.5rem;
-  }
-  footer p {
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .test {
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-  }
-  .testconv {
-    grid-column: 1/7;
-  }
-  .testimg img {
-    display: none;
-  }
-  .testsponso {
-    filter: brightness(0) invert(1);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-  }
-  .testfollow {
-    grid-column: 1/4;
-    border: 0.1rem solid rgb(147, 147, 147);
-    padding: 0rem 2rem;
-  }
-  .testfollow h3 {
-    margin-bottom: 0;
-  }
-  .testhelpdesk {
-    grid-column: 4/7;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: èrem;
-  }
-  .testhashtag {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 9rem;
-  }
-  .testhashtag p {
-    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

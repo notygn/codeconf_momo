@@ -2,7 +2,7 @@ footer{
   background-color: rgb(55, 51, 61);
   color: $font-color2;
   margin-top: 10rem;
-width: 100%;
+  width: 100%;
 
 
   h3{
@@ -32,7 +32,7 @@ width: 100%;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   padding-top: 5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   }
 
 .testconv{
@@ -87,4 +87,65 @@ width: 100%;
   p{
     font-size: 1.5rem;
   }
+}
+
+@media only screen and (max-width: 480px) {
+
+  footer{
+    background-color: rgb(55, 51, 61);
+    color: $font-color2;
+    margin: 0 auto;
+    margin-top: 10rem;
+  
+  
+  
+    h3{
+      color: $turquoise;
+    }
+  
+    i{
+      margin-left: .5rem;
+    }
+  
+    p{
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+  
+ 
+  
+  .test {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 3em;
+
+    }
+    
+  
+  .testconv{
+    grid-area: 1/1/1/4;
+    order: 1;
+  }
+  
+  
+  .testimg{
+    display: none;
+  }
+  .testhelpdesk{
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    
+  }
+  .follow{
+    grid-column: 1/4;
+  }
+
 }
