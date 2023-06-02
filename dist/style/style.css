@@ -5,6 +5,12 @@
   src: url(/src/style/museo300.woff) format("woff");
   font-weight: normal;
 }
+@font-face {
+  font-family: "codeconf";
+  src: url("/dist/webfonts/codeconf-all/fonts/codeconf.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background-color: rgb(245, 245, 245);
   font-family: "League Spartan", sans-serif;
@@ -59,8 +65,7 @@ nav {
 }
 
 .logo {
-  -webkit-margin-end: auto;
-          margin-inline-end: auto;
+  margin-inline-end: auto;
 }
 
 .hero {
@@ -77,8 +82,7 @@ nav {
 .hero img {
   position: relative;
   z-index: 2;
-  -webkit-margin-before: -3rem;
-          margin-block-start: -3rem;
+  margin-block-start: -3rem;
   width: 100%;
   grid-column: 3/6;
   grid-row: span 2;
@@ -116,21 +120,6 @@ nav a {
   font-weight: 500;
   display: block;
   text-decoration: none;
-}
-
-.becomespeaker {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.5rem;
-  margin: 5rem 0rem;
-}
-.becomespeaker h2 {
-  color: rgb(111, 63, 255);
-  font-weight: 400;
-}
-.becomespeaker p {
-  line-height: 0rem;
 }
 
 footer {
@@ -243,6 +232,31 @@ footer h3 {
   justify-content: space-around;
 }
 
+.becomespeaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80vw;
+}
+.becomespeaker h3 {
+  color: rgb(111, 63, 255);
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.becomespeaker h4 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.becomespeaker p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  max-width: 60vw;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -299,8 +313,7 @@ footer h3 {
 }
 .grid img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .grid h2 {
   font-weight: 500;
@@ -382,8 +395,7 @@ footer h3 {
   .hero img {
     position: relative;
     z-index: 2;
-    -webkit-margin-before: -3rem;
-            margin-block-start: -3rem;
+    margin-block-start: -3rem;
     width: 100%;
     grid-column: 3/6;
     grid-row: span 2;
@@ -460,8 +472,7 @@ footer h3 {
   }
   .grid img {
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .grid h2 {
     font-size: 1.5rem;
