@@ -1,10 +1,129 @@
 /*! SASS #style */
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap");
 @font-face {
   font-family: museo;
   src: url(/src/style/museo300.woff) format("woff");
   font-weight: normal;
 }
+@font-face {
+  font-family: "Museolight";
+  src: url("webfonts/museo/museo300.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museonormal";
+  src: url("webfonts/museo/museo500.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museobold";
+  src: url("webfonts/museo/museo700.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "codeconf";
+  src: url("fonts/codeconf.ttf") format("truetype"), url("fonts/codeconf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "codeconf" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-burger:before {
+  content: "\e93e";
+  color: #333;
+}
+
+.icon-schedule:before {
+  content: "\e93f";
+  margin-right: 0.5em;
+}
+
+.icon-loop:before {
+  content: "\e940";
+  color: #FF3800;
+}
+
+.icon-contact:before {
+  content: "\e941";
+}
+
+.icon-event:before {
+  content: "\e942";
+}
+
+.icon-home:before {
+  content: "\e943";
+  color: #FF3800;
+}
+
+.icon-card:before {
+  content: "\e944";
+}
+
+.icon-paypal:before {
+  content: "\e945";
+  color: #0085D3;
+}
+
+.icon-tw:before {
+  content: "\e946";
+  font-size: 1.5em;
+}
+
+.icon-slack:before {
+  content: "\e947";
+  font-size: 1.5em;
+}
+
+.icon-heart_full:before {
+  content: "\e948";
+}
+
+.icon-heart_line:before {
+  content: "\e949";
+}
+
+.icon-square_full:before {
+  content: "\e94a";
+}
+
+.icon-square_line:before {
+  content: "\e94b";
+}
+
+.icon-spade_full:before {
+  content: "\e94c";
+}
+
+.icon-spade_line:before {
+  content: "\e94d";
+}
+
+.icon-clover_full:before {
+  content: "\e94e";
+}
+
+.icon-clover_line:before {
+  content: "\e94f";
+}
+
 @font-face {
   font-family: "codeconf";
   src: url("/dist/webfonts/codeconf-all/fonts/codeconf.ttf") format("truetype");
@@ -62,6 +181,7 @@ p {
 nav {
   display: flex;
   gap: 2rem;
+  align-items: flex-end;
 }
 
 .logo {
@@ -393,30 +513,28 @@ footer h3 {
     border: 0;
   }
   .hero img {
-    position: relative;
-    z-index: 2;
     margin-block-start: -3rem;
-    width: 100%;
+    width: 70%;
     grid-column: 3/6;
     grid-row: span 2;
     pointer-events: none;
     align-self: end;
   }
   .hero h1 {
-    font-size: 2rem;
-    font-weight: 500;
-    align-self: end;
+    font-size: 4rem;
+    font-weight: 900;
     color: white;
+    position: absolute;
+    z-index: 2;
+    max-width: 25rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
   }
-  .hero h1, .hero p {
+  .hero h1 {
     grid-column: 6/11;
   }
   .hero p {
-    font-size: 1rem;
-    align-self: start;
-    color: white;
-    line-height: 1rem;
-    padding: 0rem 1rem 0rem 1rem;
+    display: none;
   }
   nav {
     background: white;
@@ -434,18 +552,26 @@ footer h3 {
     text-decoration: none;
   }
   .stripes {
-    display: none;
+    margin-bottom: -4rem;
+  }
+  #stripeleft {
+    max-width: 10rem;
+  }
+  #striperight {
+    max-width: 10rem;
   }
   .gridspeaker:hover {
     background-color: rgb(255, 220, 192);
-    border-radius: 0.5rem;
+    width: 100vw;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
   }
   .gridspeaker:hover img {
     display: none;
   }
   .gridspeaker:hover .flip {
-    display: inline-block;
-    padding: 1rem;
+    display: inline;
   }
   .gridspeaker:hover h2 {
     font-size: 1.5rem;
@@ -461,18 +587,19 @@ footer h3 {
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(1, minmax(6rem, 18rem));
+    grid-template-columns: repeat(1, minmax(1rem, 18rem));
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
     justify-content: center;
   }
   .gridspeaker {
-    width: 13rem;
+    width: 19rem;
   }
   .grid img {
     width: 100%;
     object-fit: cover;
+    border-radius: 100%;
   }
   .grid h2 {
     font-size: 1.5rem;
@@ -481,6 +608,15 @@ footer h3 {
     margin-top: 0.1rem;
   }
   .flip {
+    display: none;
+  }
+  .gridspeaker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10rem;
+  }
+  .gridstripe {
     display: none;
   }
   .gridspeaker:hover {

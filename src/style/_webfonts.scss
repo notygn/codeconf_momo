@@ -5,3 +5,107 @@
   src: url(/src/style/museo300.woff) format("woff");
   font-weight: normal;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Museolight';
+  src: url('webfonts/museo/museo300.woff') format('woff');
+  font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+  font-family: 'Museonormal';
+  src: url('webfonts/museo/museo500.woff') format('woff');
+  font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+  font-family: 'Museobold';
+  src: url('webfonts/museo/museo700.woff') format('woff');
+  font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+    font-family: 'codeconf';
+    src:
+      url('fonts/codeconf.ttf') format('truetype'),
+      url('fonts/codeconf.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  .icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'codeconf' !important;
+    // speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .icon-burger:before {
+    content: "\e93e";
+    color: #333;
+  }
+  .icon-schedule:before {
+    content: "\e93f";
+    margin-right: 0.5em;
+  }
+  .icon-loop:before {
+    content: "\e940";
+    color: #FF3800;
+  }
+  .icon-contact:before {
+    content: "\e941";
+  }
+  .icon-event:before {
+    content: "\e942";
+  }
+  .icon-home:before {
+    content: "\e943";
+    color: #FF3800;
+  }
+  .icon-card:before {
+    content: "\e944";
+  }
+  .icon-paypal:before {
+    content: "\e945";
+    color: #0085D3;
+  }
+  .icon-tw:before {
+    content: "\e946";
+    font-size: 1.5em;
+  }
+  .icon-slack:before {
+    content: "\e947";
+    font-size: 1.5em;
+  }
+  .icon-heart_full:before {
+    content: "\e948";
+  }
+  .icon-heart_line:before {
+    content: "\e949";
+  }
+  .icon-square_full:before {
+    content: "\e94a";
+  }
+  .icon-square_line:before {
+    content: "\e94b";
+  }
+  .icon-spade_full:before {
+    content: "\e94c";
+  }
+  .icon-spade_line:before {
+    content: "\e94d";
+  }
+  .icon-clover_full:before {
+    content: "\e94e";
+  }
+  .icon-clover_line:before {
+    content: "\e94f";
+  }
