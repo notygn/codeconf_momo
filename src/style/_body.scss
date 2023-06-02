@@ -1,10 +1,10 @@
 .orangebtn{
   display: flex;
   justify-content: center;
-  margin-bottom: -13.5rem;
+  margin-top: 8rem;
 
   .btn {
-    padding: 20px 110px;
+    padding: 1.2rem 7rem;
     font-size: 1.5rem;
     text-decoration: none;
     border: 2rem solid rgba(255, 89, 0, 0.5);
@@ -57,4 +57,10 @@
     margin-left: .7rem;
   }
 
+}
+
+@media only screen and (max-width: 480px) {
+  .orangebtn{
+    margin-top: 6rem;
+    }
 }
